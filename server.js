@@ -27,6 +27,11 @@ db.connect((err) => {
   }
   console.log('✅ Connected to MySQL database.');
 });
+setInterval(() => {
+  db.query('SELECT 1', (err) => {
+    if (err) console.error('⚠️ MySQL keep-alive failed:', err);
+  });
+}, 60000); // 5 min
 
 // Ensure user_orders table exists and has correct schema
 const createUserOrdersTableSql = `
@@ -523,4 +528,5 @@ app.post('/api/place-bid', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
+
 
