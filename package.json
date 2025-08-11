@@ -2,12 +2,8 @@
   "name": "tutedude",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev:server": "node server.js",
-    "build": "next build",
-    "start": "node server.js",
-    "start:server": "node server.js",
-    "lint": "next lint"
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -34,4 +30,5 @@
     "typescript": "^5"
   }
 }
+
 
