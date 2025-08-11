@@ -3,12 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev --turbopack\" \"node server.js\"",
-    "dev:next": "next dev --turbopack",
     "dev:server": "node server.js",
     "build": "next build",
-    "start": "concurrently \"next start\" \"node server.js\"",
-    "start:next": "next start",
+    "start": "node server.js",
     "start:server": "node server.js",
     "lint": "next lint"
   },
@@ -37,3 +34,4 @@
     "typescript": "^5"
   }
 }
+
