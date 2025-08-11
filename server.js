@@ -4,7 +4,7 @@ const mysql = require('mysql2');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3001;
+const PORT = 10000;
 
 // Middleware
 app.use(cors());
@@ -523,3 +523,4 @@ app.post('/api/place-bid', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
+
