@@ -1,11 +1,9 @@
 {
-  "name": "tutedude",
-  "version": "0.1.0",
+  "name": "rawmart-backend",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development node server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -20,3 +18,4 @@
     "tailwind-merge": "^3.3.1"
   }
 }
+
